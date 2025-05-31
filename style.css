@@ -1,0 +1,62 @@
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #34495e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ऑपरेटर बटन्स के लिए अलग स्टाइल */
+button:nth-child(4n) {
+    background-color: #e74c3c;
+}
+
+/* इक्वल बटन के लिए स्पेशल स्टाइल */
+button:nth-child(15) {
+    background-color: #27ae60;
+}
+
+/* क्लियर बटन के लिए स्पेशल स्टाइल */
+button:first-child {
+    background-color: #c0392b;
+}
