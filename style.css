@@ -69,3 +69,33 @@ button:first-child {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     font-family: Arial, sans-serif;
 }
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info p {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.phone-number {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.phone-number:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
